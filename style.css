@@ -1,0 +1,424 @@
+ /* WINNORA BRAND COLOURS */
+:root {
+    --navy: #17172F;
+    --blush: #F1DCE1;
+    --cream: #FFF8F7;
+    --white: #FFFFFF;
+}
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: var(--cream);
+    color: var(--navy);
+    line-height: 1.6;
+}
+
+/* HEADER */
+.logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+header {
+    background-color: var(--navy);
+    color: var(--blush);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 6px;
+}
+
+header p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--blush);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--white);
+}
+
+/* MAIN SECTIONS */
+section {
+    padding: 75px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 17px;
+}
+
+/* HOME SECTION */
+#home {
+    background-color: var(--blush);
+    padding: 110px 20px;
+}
+
+#home h2 {
+    font-size: 42px;
+}
+
+#home a {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 12px 28px;
+    text-decoration: none;
+}
+
+/* COLLECTION SECTIONS */
+#jewels, #about {
+    background-color: var(--white);
+}
+
+#parfums {
+    background-color: var(--cream);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--navy);
+    color: var(--blush);
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+/* COLLECTION DESIGN */
+
+.collection {
+    padding: 90px 7%;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.perfume-section {
+    background-color: #F1DCE1;
+}
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.collection h2 {
+    letter-spacing: 3px;
+    font-size: 32px;
+}
+
+.collection-intro {
+    max-width: 550px;
+    margin: 15px auto 40px;
+    color: #666;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #FFF8F7;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-image {
+    height: 260px;
+    background: linear-gradient(
+        135deg,
+        #F1DCE1,
+        #E6C6CF,
+        #FFF8F7
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #17172F;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.product-card h3 {
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.product-card .price {
+    color: #17172F;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 280px;
+    }
+}
+.product-photo {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+/* WHATSAPP CONTACT BUTTON */
+
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background-color: #17172F;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #8C6674;
+    transform: translateY(-3px);
+}
+/* PRODUCT ORDER BUTTON */
+
+.order-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 25px;
+    background-color: #17172F;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #B47D91;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+}
+<a href="https://wa.me/254742345359?text=Hello%20WINNORA%2C%20I%20would%20like%20to%20enquire%20about%20the%20WINNORA%20JEWELS%20collection.%20Could%20you%20share%20more%20details%3F"
+   class="order-button"
+   target="_blank"
+   rel="noopener noreferrer">
+   ENQUIRE NOW
+</a>
+/* WINNORA HOMEPAGE HERO */
+
+.hero {
+    background-color: #F8EDEF;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-brand {
+    color: #C6A36A;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    color: #17172F;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.hero-subtitle {
+    color: #555;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    background-color: #17172F;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #C6A36A;
+    color: white;
+}
+
+/* MOBILE DISPLAY */
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+}
+/* WINNORA LUXURY NAVIGATION */
+
+.site-header {
+    background-color: #FFFFFF;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 1px solid #F0E3E6;
+}
+
+.brand {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.brand p {
+    color: #C6A36A;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 8px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.main-nav a {
+    color: #17172F;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #C6A36A;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        flex-direction: column;
+        padding: 20px 12px;
+    }
+
+    .main-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+}
+/* WINNORA COLLECTION FINISHING TOUCHES */
+
+.section-label {
+    color: #C6A36A;
+    letter-spacing: 4px;
+    font-size: 11px;
+}
+
+.collection-intro {
+    line-height: 1.9;
+    max-width: 550px;
+    margin: 15px auto 35px;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(23, 23, 47, 0.08);
+}
